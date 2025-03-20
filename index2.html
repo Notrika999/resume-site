@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3052fb;
+        }
+
+        img {
+            width: 100%;
+            /* height: 450px; */
+            transform: translatey(-10px);
+        }
+
+        .progress-container {
+            width: 100%;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 20px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 70%;
+            /* مقدار درصد */
+            background-color: #4CAF50;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+            font-weight: bold;
+            transition: width 0.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: space-between; width: 100%; height: 100vh; padding: 16px;">
+        <div style="color: #fff; padding: 8px; width: 25%; background-color: #2a2a2a; border-radius: 12px;">
+            <div style="width: 200px; height: 200px; overflow: hidden; border-radius: 100%; margin: 0 auto;">
+                <img src="./photo_2025-03-19_21-20-16.jpg" alt="">
+            </div>
+            <h1
+                style="color: #fff; margin: 4px auto; text-align: center; border-bottom: 1px dashed #fff; padding: 4px 0;">
+                Omid Haghi
+            </h1>
+            <p style="margin: 16px 0;">تاریخ تولد 1371</p>
+            <h2
+                style=" margin: 4px 0; text-align: center; border: 1px solid #fff; padding: 4px 0; border-radius: 12px;">
+                اطلاعات تماس
+            </h2>
+            <p style="display: flex; align-items: center; gap: 10px; padding-top: 16px;">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2" />
+                    </svg></span>
+                <span>omid.hagei@gmail.com</span>
+            </p>
+            <p style="display: flex; align-items: center; gap: 10px; padding-top: 16px;">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+                        <path fill="#fff"
+                            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2" />
+                    </svg></span>
+                <a style="color: #fff;" href="https://github.com/Notrika999">https://github.com/Notrika999</a>
+            </p>
+            <p style="padding-top: 16px; display: flex; align-items: center; gap: 10px;">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12.5 16L9 19.5L7 13l-5.5-2l21-8l-4 18l-7.5-7l4-3" />
+                    </svg></span>
+                <span>09355758996</span>
+            </p>
+
+            <h2
+                style=" margin: 4px 0; text-align: center; border: 1px solid #fff; padding: 4px 0; border-radius: 12px;">
+                مهارت ها
+            </h2>
+            <div style="padding-top: 16px; display: flex; flex-direction: column; row-gap: 8px;">
+                <div style="display: flex; align-items: center; column-gap: 4px;">
+                    <span style="width: 25%;">ReactJs </span>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; column-gap: 4px;">
+                    <span style="width: 25%;">VueJs</span>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; column-gap: 4px;">
+                    <span style="width: 25%;">NuxtJs</span>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; column-gap: 4px;">
+                    <span style="width: 25%;">JavaScript</span>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; column-gap: 4px;">
+                    <span style="width: 25%;">Html&Css</span>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 100%;">100%</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="padding: 8px; width: 75%; display: flex; align-items: center; flex-direction: column;">
+            <h2
+                style="background-color: #2a2a2a; width: 700px; text-align: center; color: #fff; padding: 8px; border-radius: 12px;">
+                درباره
+                من</h2>
+            <p
+                style="width: 800px; font-size: 20px; font-weight: 700; color: #5a5a5a; line-height: 1.4; margin: 16px 0;">
+                برنامه نویس فرانت اند، پرشور و خلاق با پیشینه قوی در چارچوب های جاوا اسکریپت مدرن هستم. با تجربه عملی در
+                ساختن برنامه های کاربردی وب پویا و تعاملی. مهارت کار با React، Vue و ابزارهای مدیریت مانند Redux و Pinia
+                . توانمند در حل مسائل پیچیده، و دیباگ کردن پروژه های جاوااسکریپتی. به طور مداوم در تلاش برای
+                بهبود مهارت های خود هستم تا در صنعت توسعه وب همیشه پیشرو باشم.
+            </p>
+            <h2
+                style="background-color: #2a2a2a; width: 700px; text-align: center; color: #fff; margin-top: 16px; padding: 8px; border-radius: 12px;">
+                سوابق شغلی
+            </h2>
+            <p
+                style="width: 800px; font-size: 30px; font-weight: 700; color: #3a3a3a; line-height: 1.4; margin: 16px 0;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+                    <path fill="#656565" d="m14 7l-5 5l5 5z" />
+                </svg> <span>برنامه نویسی و توسعه اپ</span>
+            </p>
+            <div>
+                <p
+                    style="width: 800px; font-size: 20px; font-weight: 700; color: #5a5a5a; line-height: 1.4; margin: 16px 0;">
+                    از مرداد 1403 تا شهریور 1403 به مدت یک ماه طراحی دیزاین و توسعه وب اپ به همراه مدیریت پنل آن را
+                    انجام دادم
+                </p>
+                <span style="font-weight: 700;">لینک:</span> <a style="text-align: right; width: 100%; font-size: 18px;"
+                    href="https://meta-detector.com/">meta
+                    detector</a>
+                <ul style="list-style: none; margin: 8px 0;">
+                    <li style="font-weight: 700;">توضیحات فنی</li>
+                    <li style="padding: 4px 8px;">React</li>
+                    <li style="padding: 4px 8px;">Redux</li>
+                    <li style="padding: 4px 8px;">Axios</li>
+                </ul>
+            </div>
+
+            <h2
+                style="background-color: #2a2a2a; width: 700px; text-align: center; color: #fff; margin-top: 16px; padding: 8px; border-radius: 12px;">
+                پروژه ها
+            </h2>
+            <div style="display: flex; justify-content: space-between; width: 65%;  margin-top: 16px;">
+
+                <div>
+                    <span style="font-weight: 700;font-size: 18px;">فروشگاه گجت های هوشمند</span> <a
+                        style="text-align: right; width: 100%; font-size: 18px;"
+                        href="https://store-beta-pearl.vercel.app/">Store</a>
+                    <ul style="font-size: 18px; font-weight: 700; color: #3a3a3a; margin: 16px 0; list-style: none;">
+                        <li style="font-weight: 700;">توضیحات فنی</li>
+                        <li style="padding: 4px 8px;">Vue 3</li>
+                        <li style="padding: 4px 8px;">Pinia</li>
+                        <li style="padding: 4px 8px;">tailwindcss</li>
+                        <li style="padding: 4px 8px;">Data json</li>
+                    </ul>
+                </div>
+                <!-- <div>
+                    <span style="font-weight: 700;font-size: 18px;">فروشگاه گجت های هوشمند</span> <a
+                        style="text-align: right; width: 100%; font-size: 18px;"
+                        href="https://store-beta-pearl.vercel.app/">Store</a>
+                    <ul style="font-size: 18px; font-weight: 700; color: #3a3a3a; margin: 16px 0; list-style: none;">
+                        <li style="font-weight: 700;">توضیحات فنی</li>
+                        <li style="padding: 4px 8px;">Vue 3</li>
+                        <li style="padding: 4px 8px;">Pinia</li>
+                        <li style="padding: 4px 8px;">tailwindcss</li>
+                        <li style="padding: 4px 8px;">Data json</li>
+                    </ul>
+                </div> -->
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
