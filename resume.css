@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Vazir;
+    src: url("./Vazir.woff")format("woff");
+}
 /* General Styles */
 * {
     padding: 0;
@@ -5,6 +9,9 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Vazir;
+}
 a {
     text-decoration: none;
     color: #3052fb;
@@ -60,6 +67,7 @@ img {
 }
 
 .sidebar h1 {
+    font-size: 32px;
     color: #fff;
     margin: 4px auto;
     text-align: center;
@@ -174,4 +182,29 @@ img {
 
 .main-content ul li:not(:first-child) {
     padding-right: 16px;
+}
+@media screen and (max-width: 1220px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .main-content {
+        width: 100%;
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .main-title,
+    .description,
+    .job-title,
+    .main-content ul {
+        width: 100%;
+    }
 }
