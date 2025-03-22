@@ -138,19 +138,22 @@ img {
     color: #fff;
     padding: 8px;
     border-radius: 12px;
+    margin: 16px 0;
 }
 
 .main-sub-title {
     display: flex;
     align-items: center;
+    font-size: 22px !important;
+        font-weight: 700 !important;
 }
 
 .description {
     width: 800px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     color: #5a5a5a;
-    line-height: 1.4;
+    line-height: 1.6;
     margin: 8px 0;
 }
 
