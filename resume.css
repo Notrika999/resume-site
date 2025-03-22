@@ -18,8 +18,8 @@ a {
 }
 
 img {
+    height: 100%;
     width: 100%;
-    transform: translateY(-10px);
 }
 
 /* Progress Bar Styles */
@@ -53,6 +53,7 @@ img {
 .sidebar {
     color: #fff;
     padding: 8px;
+    padding-top: 32px;
     width: 25%;
     background-color: #2a2a2a;
     border-radius: 12px;
@@ -60,10 +61,14 @@ img {
 
 .profile-img-container {
     width: 200px;
-    height: 200px;
-    overflow: hidden;
+    height: 180px;
     border-radius: 100%;
+    overflow: hidden;
     margin: 0 auto;
+    -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
 }
 
 .sidebar h1 {
