@@ -148,6 +148,10 @@ img {
         font-weight: 700 !important;
 }
 
+.main-content ul:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 2rem;
+}
 .description {
     width: 800px;
     font-size: 20px;
