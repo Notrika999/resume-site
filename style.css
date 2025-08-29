@@ -10,7 +10,9 @@
     font-family: Vazir;
     src: url("./Vazir.woff")format("woff");
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body.light {
     --bg: #ffffff;
     --text: #676767;
@@ -43,7 +45,12 @@ a {
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
-    color: #0d6efd !important;
+    color: #06b6d4 !important;
+        transition: color 0.4s ease-in-out;
+    }
+    
+    a:hover {
+        color: #ec4899 !important;
 }
 body.light h1,
 body.light h2,
@@ -97,8 +104,8 @@ header {
 
 /* Sections */
 section {
-    margin: 40px 0;
-    padding-bottom: 12px;
+    margin: 4rem 0;
+        padding-bottom: 2rem;
     border-bottom: 1px solid #aaa;
 }
 
@@ -111,6 +118,12 @@ section {
     align-items: center;
 }
 
+#intro img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
 .intro-right h1 {
     padding-bottom: 1.5rem;
 }
@@ -164,6 +177,12 @@ body.light .skill {
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 8px;
+    transition: all 0.3s ease;
+    }
+    
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 2px 5px .5px #ccc;
 }
 .project-card .cover {
     width: 100%;
@@ -191,6 +210,8 @@ body.light .skill {
     .project-card a {
         display: flex;
         align-items: center;
+        gap: .5rem;
+            margin-top: .75rem;
 }
 
 .tech-list {
@@ -205,6 +226,13 @@ body.light .skill {
     border: 1px dashed #aaa;
 }
 
+#contact p {
+    margin: 1rem 0;
+}
+
+.contact-list {
+    list-style: none;
+}
 /*  */
 .container {
     width: 100%;
