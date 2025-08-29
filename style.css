@@ -104,12 +104,20 @@ section {
 /* Skills */
 .skills-grid {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 1.5rem 0;
 }
 
 .skill {
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: .5rem;
     text-align: center;
+    border-radius: .5rem;
+        box-shadow: 0 2px 5px .5px #ccc;
 }
 
 /* Projects */
