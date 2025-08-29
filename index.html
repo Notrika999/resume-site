@@ -4,161 +4,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>رزومه</title>
-    <link rel="stylesheet" href="resume.css">
+    <title>پرتفولیوی من</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="container">
-        <aside class="sidebar">
-            <div class="profile-img-container">
-                <img src="#" alt="Profile Image">
-            </div>
-            <h1 class="heading">امید حقی</h1>
-            <p>تاریخ تولد 1371</p>
-            <p>توسعه‌دهنده فرانت‌اند با ریکت و ناکست</p>
+<body class="light">
 
-            <h2 class="section-title">
-                اطلاعات تماس
-            </h2>
-            <div class="contact-info">
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2" />
-                    </svg></span>
-                <span>omid.hagei@gmail.com</span>
+    <!-- ===== Header ===== -->
+    <header>
+        <nav class="navbar">
+            <div class="controls">
+                <button id="theme-toggle">🌙/☀️</button>
+                <button id="lang-toggle">EN / فا</button>
             </div>
-            <div class="contact-info">
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+            <ul class="menu">
+                <li><a href="#projects" data-fa="پروژه‌ها" data-en="Projects">پروژه‌ها</a></li>
+                <li><a href="#about" data-fa="درباره من" data-en="About">درباره من</a></li>
+                <li><a href="#contact" data-fa="ارتباط با من" data-en="Contact">ارتباط با من</a></li>
+            </ul>
+            </nav>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/omid-haghi-a57bb9109/">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                        <path fill="#0288D1"
+                            d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z">
+                        </path>
+                        <path fill="#FFF"
+                            d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://t.me/Omid_haghi">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                        <path fill="#29b6f6" d="M24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20S35,4,24,4z"></path>
                         <path fill="#fff"
-                            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2" />
-                    </svg></span>
-                <a href="https://github.com/Notrika999">https://github.com/Notrika999</a>
+                        d="M34,15l-3.7,19.1c0,0-0.2,0.9-1.2,0.9c-0.6,0-0.9-0.3-0.9-0.3L20,28l-4-2l-5.1-1.4c0,0-0.9-0.3-0.9-1	c0-0.6,0.9-0.9,0.9-0.9l21.3-8.5c0,0,0.7-0.2,1.1-0.2c0.3,0,0.6,0.1,0.6,0.5C34,14.8,34,15,34,15z">
+                    </path>
+                    <path fill="#b0bec5" d="M23,30.5l-3.4,3.4c0,0-0.1,0.1-0.3,0.1c-0.1,0-0.1,0-0.2,0l1-6L23,30.5z">
+                    </path>
+                    <path fill="#cfd8dc"
+                        d="M29.9,18.2c-0.2-0.2-0.5-0.3-0.7-0.1L16,26c0,0,2.1,5.9,2.4,6.9c0.3,1,0.6,1,0.6,1l1-6l9.8-9.1	C30,18.7,30.1,18.4,29.9,18.2z">
+                    </path>
+                </svg>
+            </a>
+            <a href="https://github.com/Notrika999">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 64 64">
+                    <path
+                        d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- ===== Intro (معرفی کوتاه) ===== -->
+        <section id="intro">
+            <div class="intro-left">
+                <img src="assets/profile.jpg" alt="تصویر پرسنلی">
             </div>
-            <div class="contact-info">
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
-                        <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12.5 16L9 19.5L7 13l-5.5-2l21-8l-4 18l-7.5-7l4-3" />
-                    </svg></span>
-                    <a href="https://t.me/Omid_haghi">Omid Haghi</a>
+            <div class="intro-right">
+                <h1 data-fa="سلام! من امید حقی هستم" data-en="Hi! I'm Omid Haghi">
+                    سلام! من امید حقی هستم
+                </h1>
+                <p data-fa="توسعه‌دهنده فرانت‌اند با ریکت و ناکست" data-en="Front-end developer with ReactJs and NuxtJs">
+                    توسعه‌دهنده فرانت‌اند با ریکت و ناکست
+                </p>
+                <p data-fa="تاریخ تولد: 1371/08/02" data-en="Date of Birth: 1992/10/24">
+                    تاریخ تولد: 1371/08/02
+                </p>
             </div>
-
-            <h2 class="section-title">
-                مهارت‌ها
-            </h2>
-            <div class="skills-container">
-                <div class="skill-item">
-                    <span class="skill-name">HTML</span>
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 100%">100%</div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-name">CSS</span>
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 100%">100%</div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-name">JavaScript</span>
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 90%">90%</div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-name">React</span>
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 80%">80%</div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-name">Vue</span>
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 80%">80%</div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span class="skill-name">Nuxt</span>
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 80%">80%</div>
-                    </div>
-                </div>
+        </section>
+        
+        <!-- ===== About (معرفی کامل) ===== -->
+        <section id="about">
+            <div class="about-right">
+                <h2 data-fa="معرفی کامل" data-en="About Me">معرفی کامل</h2>
+                <p data-fa="برنامه نویس فرانت اند، پرشور و خلاق با پیشینه قوی در چارچوب های جاوا اسکریپت مدرن هستم. با تجربه عملی در ساختن برنامه های کاربردی وب پویا و تعاملی. مهارت کار با React، Vue و ابزارهای مدیریت مانند Redux و Pinia. توانمند در حل مسائل پیچیده، و دیباگ کردن پروژه های جاوااسکریپتی. به طور مداوم در تلاش برای بهبود مهارت های خود هستم تا در صنعت توسعه وب همیشه پیشرو باشم."
+                    data-en="I am a passionate and creative front-end developer with a strong background in modern JavaScript frameworks. Hands-on experience in building dynamic and interactive web applications. Skilled in React, Vue, and state management tools like Redux and Pinia. Capable of solving complex problems and debugging JavaScript projects. Continuously striving to improve my skills to stay ahead in the web development industry.">
+                    برنامه نویس فرانت اند، پرشور و خلاق با پیشینه قوی در چارچوب های جاوا اسکریپت مدرن هستم. با تجربه
+                    عملی در
+                    ساختن برنامه های کاربردی وب پویا و تعاملی. مهارت کار با React، Vue و ابزارهای مدیریت مانند Redux و
+                    Pinia.
+                    توانمند در حل مسائل پیچیده، و دیباگ کردن پروژه های جاوااسکریپتی. به طور مداوم در تلاش برای بهبود
+                    مهارت های
+                    خود هستم تا در صنعت توسعه وب همیشه پیشرو باشم.
+                </p>
             </div>
-        </aside>
+            <div class="about-left">
+                <img src="assets/full-photo.jpg" alt="تصویر قدی">
+            </div>
+        </section>
+        
+        <!-- ===== Skills (مهارت‌ها) ===== -->
+        <section id="skills">
+            <h2 data-fa="مهارت‌ها" data-en="Skills">مهارت‌ها</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <img src="assets/html-logo.png" alt="HTML">
+                    <span>HTML</span>
+                </div>
+                <div class="skill">
+                    <img src="assets/css-logo.png" alt="CSS">
+                    <span>CSS</span>
+                </div>
+                <div class="skill">
+                    <img src="assets/js-logo.png" alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <!-- مهارت‌های بیشتر -->
+            </div>
+        </section>
 
-        <main class="main-content">
-            <h2 class="main-title">درباره من</h2>
-            <p class="description">
-                برنامه نویس فرانت اند، پرشور و خلاق با پیشینه قوی در چارچوب های جاوا اسکریپت مدرن هستم. با تجربه عملی در
-                ساختن برنامه های کاربردی وب پویا و تعاملی. مهارت کار با React، Vue و ابزارهای مدیریت مانند Redux و Pinia
-                . توانمند در حل مسائل پیچیده، و دیباگ کردن پروژه های جاوااسکریپتی. به طور مداوم در تلاش برای
-                بهبود مهارت های خود هستم تا در صنعت توسعه وب همیشه پیشرو باشم.
-            </p>
-
-            <h2 class="main-title">سوابق کاری</h2>
-            <p class="description main-sub-title">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+        <!-- ===== Projects (پروژه‌ها) ===== -->
+        <section id="projects">
+            <h2 data-fa="پروژه‌ها" data-en="Projects">پروژه‌ها</h2>
+            <div class="project-cards">
+                <article class="project-card">
+                    <img src="assets/project1.jpg" alt="تصویر پروژه">
+                    <h3 data-fa="برنامه نویسی و توسعه اپ فلزیاب (فریلنسری)"
+                        data-en="Metal Detector App Development (Freelance)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
                     <path fill="#656565" d="m14 7l-5 5l5 5z" />
-                </svg> <span>برنامه نویسی و توسعه اپ فلزیاب (فریلنسری)</span>
-            </p>
-            <p class="description">
-                در یک دوره یک‌ماه (از مرداد تا شهریور ۱۴۰۳) با بهره‌گیری از طراحی خلاقانه و توسعه پیشرفته وب اپلیکیشن به
-                همراه مدیریت
-                پنل، تحول چشمگیری در تجربه کاربری ایجاد کردم. این نوآوری‌ها باعث بهبود عملکرد سامانه و افزایش قابل توجه
-                فروش متادتکتور
-                گردید، به طوری که موجبات جذب مشتریان جدید نیز فراهم آمد.
-            </p>
-            <a class="job-title" href="https://meta-detector.com/">لینک: meta
-                detector</a>
-            <ul>
-                <li>توضیحات فنی</li>
-                <li>React</li>
-                <li>Redux</li>
-                <li>Axios</li>
-            </ul>
+                </svg>
+                برنامه نویسی و توسعه اپ فلزیاب (فریلنسری)
+                </h3>
+                <p data-fa="در یک دوره یک‌ماه (از مرداد تا شهریور ۱۴۰۳) با بهره‌گیری از طراحی خلاقانه و توسعه پیشرفته وب اپلیکیشن به همراه مدیریت پنل، تحول چشمگیری در تجربه کاربری ایجاد کردم. این نوآوری‌ها باعث بهبود عملکرد سامانه و افزایش قابل توجه فروش متادتکتور گردید، به طوری که موجبات جذب مشتریان جدید نیز فراهم آمد."
+                    data-en="During a one-month period (August–September 2024), by leveraging creative design and advanced web application development along with an admin panel, I significantly enhanced the user experience. These innovations improved system performance and notably increased MetaDetector's sales, while also attracting new customers.">
+                    در یک دوره یک‌ماه (از مرداد تا شهریور ۱۴۰۳) با بهره‌گیری از طراحی خلاقانه و توسعه پیشرفته وب
+                    اپلیکیشن به
+                    همراه مدیریت پنل، تحول چشمگیری در تجربه کاربری ایجاد کردم. این نوآوری‌ها باعث بهبود عملکرد
+                    سامانه و
+                    افزایش قابل توجه فروش متادتکتور گردید، به طوری که موجبات جذب مشتریان جدید نیز فراهم آمد.
+                </p>
+                    <ul class="tech-list">
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>Axios</li>
+                    </ul>
+                    <a href="https://meta-detector.com/">Metal Detector </a>
+                    </article>
 
-            <h2 class="main-title">پروژه ها</h2>
-            <p class="description main-sub-title">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+                <article class="project-card">
+                    <img src="assets/project1.jpg" alt="تصویر پروژه">
+                    <h3 data-fa="فروشگاه گجت های هوشمند (نمونه کار)" data-en="Smart Gadgets Online Shop (Portfolio Project)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
                     <path fill="#656565" d="m14 7l-5 5l5 5z" />
-                </svg> <span>فروشگاه گجت های هوشمند (نمونه کار)</span>
-            </p>
-            <p class="description">
-                به عنوان نمونه کار در دوره‌ای از دی تا بهمن ۱۴۰۳، فروشگاه گجت‌های هوشمند را از صفر تا صد طراحی و توسعه
-                دادم.
-            </p>
-            <a class="job-title" href="https://store-beta-pearl.vercel.app/">لینک: Store</a>
-            <ul>
-                <li>توضیحات فنی</li>
-                <li>Vue 3</li>
-                <li>Pinia</li>
-                <li>TailwindCSS</li>
-                <li>Data json</li>
-            </ul>
-            <p class="description main-sub-title">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+                </svg>
+                فروشگاه گجت های هوشمند (نمونه کار)
+                </h3>
+                <p data-fa="به عنوان نمونه کار در دوره‌ای از دی تا بهمن ۱۴۰۳، فروشگاه گجت‌های هوشمند را از صفر تا صد طراحی و توسعه دادم."
+                    data-en="As a portfolio project, during the period from December 2024 to February 2025, I designed and developed the Smart Gadget Store from scratch.">
+                    به عنوان نمونه کار در دوره‌ای از دی تا بهمن ۱۴۰۳، فروشگاه گجت‌های هوشمند را از صفر تا صد طراحی و توسعه دادم.
+                </p>
+                    <ul class="tech-list">
+                        <li>Vue 3</li>
+                        <li>Pinia</li>
+                        <li>TailwindCSS</li>
+                        <li>Data json</li>
+                    </ul>
+                    <a href="https://store-beta-pearl.vercel.app/">Smart Gadgets</a>
+                    </article>
+                    
+                    <article class="project-card">
+                        <img src="assets/project1.jpg" alt="تصویر پروژه">
+                        <h3 data-fa="کافه من (نمونه کار)" data-en="My Café (Portfolio Project)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
                     <path fill="#656565" d="m14 7l-5 5l5 5z" />
-                </svg> <span>کافه من (نمونه کار)</span>
-            </p>
-            <p class="description">
-                در پروژه «کافه من»، یک وب اپلیکیشن رسپانسیو و چندتم (تیره/روشن) را با استفاده از Nuxt.js، Tailwind CSS،
-                Pinia و Swiper توسعه دادم. اطلاعات اپ از فایل‌های JSON استخراج می‌شود و کاربران می‌توانند با انتخاب روش
-                سرو (در کافه یا بیرون بر) سفارش‌های خود را ثبت و پرداخت کند. پروژه در بازه زمانی ۲۰ اسفند ۱۴۰۳ تا ۶ فروردین ۱۴۰۴ به ثمر
-                رسید.
-            </p>
-            <a class="job-title" href="https://coffee-man-git-main-notrikas-projects.vercel.app">لینک: coffeeMan</a>
-            <ul>
-                <li>توضیحات فنی</li>
-                <li>Nuxt 3</li>
-                <li>Pinia</li>
-                <li>Swiper</li>
-                <li>TailwindCSS</li>
-                <li>Data json</li>
-            </ul>
+                </svg>
+                کافه من (نمونه کار)
+                </h3>
+                
+                <p data-fa="در پروژه «کافه من»، یک وب اپلیکیشن رسپانسیو و چندتم (تیره/روشن) را با استفاده از Nuxt.js، Tailwind CSS، Pinia و Swiper توسعه دادم. اطلاعات اپ از فایل‌های JSON استخراج می‌شود و کاربران می‌توانند با انتخاب روش سرو (در کافه یا بیرون بر) سفارش‌های خود را ثبت و پرداخت کند. پروژه در بازه زمانی ۲۰ اسفند ۱۴۰۳ تا ۶ فروردین ۱۴۰۴ به ثمر رسید."
+                    data-en="In the 'My Café' project, I developed a responsive and multi-theme (dark/light) web application using Nuxt.js, Tailwind CSS, Pinia, and Swiper. The app's data is extracted from JSON files, and users can place and pay for their orders by choosing the serving method (in the cafe or takeout). The project was completed between March 10, 2025 and April 26, 2025.">
+                    در یک دوره یک‌ماه (از مرداد تا شهریور ۱۴۰۳) با بهره‌گیری از طراحی خلاقانه و توسعه پیشرفته وب
+                    اپلیکیشن به
+                    همراه مدیریت پنل، تحول چشمگیری در تجربه کاربری ایجاد کردم. این نوآوری‌ها باعث بهبود عملکرد
+                    سامانه و
+                    افزایش قابل توجه فروش متادتکتور گردید، به طوری که موجبات جذب مشتریان جدید نیز فراهم آمد.
+                </p>
+                    <ul class="tech-list">
+                        <li>Nuxt 3</li>
+                        <li>Pinia</li>
+                        <li>Swiper</li>
+                        <li>TailwindCSS</li>
+                        <li>Data json</li>
+                    </ul>
+                    <a href="https://coffee-man-git-main-notrikas-projects.vercel.app">My Café</a>
+                    </article>
+                    
+                    </div>
+                    </section>
 
+        <!-- ===== Notes (نکات) ===== -->
+        <section id="notes">
+            <h2 data-fa="توضیحات و نکات" data-en="Notes">توضیحات و نکات</h2>
+            <p data-fa="اینجا می‌تونید نکات و تجربه‌های خودتون رو بنویسید..."
+                data-en="Here you can write your notes and experiences...">
+                اینجا می‌تونید نکات و تجربه‌های خودتون رو بنویسید...
+            </p>
+        </section>
 
-        </main>
+        <!-- ===== Contact (ارتباط با من) ===== -->
+        <section id="contact">
+            <h2 data-fa="ارتباط با من" data-en="Contact">ارتباط با من</h2>
+            <p data-fa="ایمیل: omid.haghei@email.com" data-en="Email: omid.haghei@email.com">
+                ایمیل: omid.haghei@email.com
+            </p>
+        </section>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
