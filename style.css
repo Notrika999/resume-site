@@ -136,6 +136,9 @@ section {
     align-items: flex-start;
 }
 
+.about-right p {
+    max-width: 350px;
+}
 /* Skills */
 .skills-grid {
     display: flex;
@@ -203,7 +206,7 @@ body.light .skill {
     }
     
     .project-card p {
-        padding: 2rem 0;
+        padding: 2rem 1rem;
         line-height: 1.8;
     }
     
