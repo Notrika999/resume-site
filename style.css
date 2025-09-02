@@ -95,6 +95,19 @@ header {
     align-items: center;
 }
 
+.lang {
+    padding: .25rem .5rem;
+    border-radius: .5rem;
+    border: none;
+    color: #fff;
+    background-color: #437dfa;
+}
+
+.theme {
+    padding: .25rem .5rem;
+    border-radius: .5rem;
+    border: none;
+}
 .menu {
     list-style: none;
     display: flex;
@@ -195,9 +208,9 @@ body.light .skill {
 .project-card {
     border: 1px solid #ccc;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: .5rem;
     transition: all 0.3s ease;
-    }
+}
     
     .project-card:hover {
         transform: translateY(-5px);
