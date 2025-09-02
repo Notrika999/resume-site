@@ -128,16 +128,27 @@ section {
     padding-bottom: 1.5rem;
 }
 /* About */
-#about {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-    align-items: flex-start;
+#about h2 {
+    margin-bottom: 1.5rem;
 }
 
-.about-right p {
-    max-width: 350px;
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    }
+    
+    .about-content p {
+        max-width: 400px;
+        margin-bottom: 1.2rem;
+    }
+                .about-cover {
+                    max-width: 100%;
+                }
+        
+                .about-cover img {
+                    width: 100%;
 }
 /* Skills */
 .skills-grid {
@@ -260,8 +271,14 @@ body.light .skill {
         flex-direction: row;
     }
 
-    #about {
+                                                                                                                                                                                                                                                                .about-content {
         flex-direction: row;
+        align-items: center;
+            justify-content: space-between;
+        }
+        
+        .about-cover {
+            max-width: 400px;
     }
 .project-card .cover {
     height: 350px;
