@@ -2393,3 +2393,11 @@ html[dir="ltr"] .footer-rights {
         transform: none !important;
     }
 }
+
+/* Learning path timeline */
+.learning-timeline { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:14px; margin:0; padding:0; list-style:none; }
+.learning-timeline li { display:flex; flex-direction:column; gap:8px; padding:16px; border:1px solid var(--border, rgba(128,128,128,.25)); border-radius:14px; background:var(--surface, transparent); min-height:90px; }
+.learning-timeline li strong { color:var(--brand-primary); font-size:1.05rem; }
+.learning-timeline li span { line-height:1.65; font-size:.94rem; }
+@media (max-width:900px) { .learning-timeline { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:560px) { .learning-timeline { grid-template-columns:1fr; gap:10px; } .learning-timeline li { min-height:0; padding:13px 15px; } }
